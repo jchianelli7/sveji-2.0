@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @media only screen and (max-width: 768px) {
+            #ppUpdateLightbox {
+                padding: 15px;
+                font-size: 8px;
+            }
+        }
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>Sveji Boyz</title>
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/vnd.microsoft.icon"/>
+
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0"/>
+
+    <meta name="description"
+          content='Sveji Boyz Website'/>
+
+    <meta property="og:title" content='Sveji Boyz Website'/>
+
+    <meta property="og:description"
+          content='Sveji Boyz Website.'/>
+
+    <meta name="keywords" content="svejiboyz">
+
+    <link rel="stylesheet" type="text/css" href="css/intro-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+<div class="logoWrapper desktop"><img src="./images/svejiLogo2.png"/></div>
+<div class="logoWrapper mobile" style="display:none;"><img src="./images/svejiLogo2.png"/></div>
+<div class="videoWrapper"><!--div id="ytplayer"></div-->
+    <video playsinline loop id="mp4Video">
+        <source src="./images/sveji-edit.mp4"
+                type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<div class="footerWrapper">
+    <div class="linkWrapper">
+        <a href="javascript:void(0)" class="watchNow hoverEffect" custom-link-name="Watch Video">Watch Now</a>
+        <a href="https://open.spotify.com/artist/2Z6ld48US3t1IoqP3KXZLK" target="_blank" class="listennow hoverEffect"
+           custom-link-name="Listen Now">Listen Now</a>
+        <a href="https://www.amazon.com/s?k=Sveji+Boyz&i=digital-music&search-type=ss&ref=ntt_srch_drd_B07MHCRM27" target="_blank" class="hoverEffect"
+           custom-link-name="">Buy Now</a>
+    </div>
+    <div class="socialWrapper">
+        <a class="enterSite" href="./main.html" data-track="enter-site">Enter Site</a>
+        <ul class="footer-social">
+            <li class="fs-fb">
+                <a class="icon-facebook"  href="https://www.facebook.com/svejiboyz/"
+                   target="_blank"></a>
+            </li>
+            <li class="fs-tw">
+                <a class="icon-twitter"  href="https://twitter.com/svejiboyz"
+                   target="_blank"></a>
+            </li>
+            <li class="fs-ig">
+                <a class="icon-instagram"  href="https://www.instagram.com/svejiboyz/?hl=en"
+                   target="_blank"></a>
+            </li>
+            <li class="fs-yt">
+                <a class="icon-youtube"
+                   href="https://www.youtube.com/channel/UCpDBUXZtI-n7AbiYJpS6qpg" target="_blank"></a>
+            </li>
+            <li class="fs-sp">
+                <a class="icon-spotify"
+                   href="https://open.spotify.com/artist/2Z6ld48US3t1IoqP3KXZLK" target="_blank"></a>
+            </li>
+            <li class="fs-apple">
+                <a class="icon-appleinc"
+                   href="https://music.apple.com/us/artist/sveji-boyz/1447760388" target="_blank"></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="copyrightWrapper">
+        &copy;Copyright 2020 Sveji Boyz
+    </div>
+    <div class="lightBoxWrapper lightbox" style="display:none;">
+        <a href="javascript:void(0)" class="closeLB" custom-link-name="LightBox Close Button"><img
+                src="./images/close.svg"/></a>
+        <div class="lightbox-container">
+            <div class="video-container">
+                <div class="lbVideoWrapper" id="player2"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+
+    function onYouTubePlayerAPIReady(playerID) {
+
+        player = new YT.Player(playerID, {
+            height: '390',
+            width: '640',
+            videoId: 'vAjdbivsaVw',
+            enablejsapi: 1,
+            playerVars: {
+                loop: 1,
+                controls: 0,
+                autohide: 1,
+                modestbranding: 1,
+                rel: 0
+            },
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.playVideo();
+
+    }
+
+    function onPlayerStateChange(event) {
+
+        if (event.data == YT.PlayerState.ENDED) {
+            player.seekTo(0);
+            player.playVideo();
+        }
+    }
+
+    function stopVideo() {
+        player.stopVideo();
+    }
+
+    function pauseVideo() {
+        player.pauseVideo();
+    }
+
+    function openLightBox() {
+        onYouTubePlayerAPIReady('player2');
+        jQuery('.lightBoxWrapper').fadeIn();
+        player.playVideo();
+    }
+
+    var vid = document.getElementById("mp4Video");
+
+    function enableAutoplay() {
+        vid.autoplay = true;
+        vid.muted = true;
+        vid.load();
+    }
+
+
+    jQuery(document).ready(function () {
+        enableAutoplay()
+        jQuery('.watchNow').click(function () {
+            openLightBox();
+
+
+        })
+        jQuery('.closeLB').click(function () {
+            jQuery('.lightBoxWrapper').fadeOut();
+            player.stopVideo();
+            player.destroy();
+
+        });
+
+    });
+
+    jQuery(window).load(function () {
+       // homePage();
+    });
+
+</script>
+
+</body>
+
+</html>

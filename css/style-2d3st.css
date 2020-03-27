@@ -1,0 +1,921 @@
+@import url("https://use.typekit.net/xlq2hea.css");
+@import url("https://use.typekit.net/xlq2hea.css");
+@import url("https://use.typekit.net/vtg5szn.css");
+body {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    background: #000;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-size-adjust: none;
+    font-style: normal;
+    font-weight: 900;
+    margin: 0;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.Title {
+    font-size: 48px;
+    letter-spacing: 0;
+    color: #C7424F;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+}
+
+.contentWrapper {
+    margin-bottom: 250px;
+}
+
+#wsk-widget .widget_row .no-dates {
+    text-align: center;
+}
+
+/*icommon*/
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon-3tt5q4.eot');
+    src: url('../fonts/icomoon-3tt5q4.eot#iefix') format('embedded-opentype'), url('../fonts/icomoon-3tt5q4.ttf') format('truetype'), url('../fonts/icomoon-3tt5q4.woff') format('woff'), url('../fonts/icomoon-3tt5q4.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering ==== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-deezer:before {
+    content: "\e900";
+}
+
+.icon-facebook:before {
+    content: "\ea90";
+}
+
+.icon-instagram:before {
+    content: "\ea92";
+}
+
+.icon-spotify:before {
+    content: "\ea94";
+}
+
+.icon-twitter:before {
+    content: "\ea96";
+}
+
+.icon-youtube:before {
+    content: "\ea9d";
+}
+
+.icon-appleinc:before {
+    content: "\eabe";
+}
+
+.icon-soundcloud:before {
+    content: "\eac3";
+}
+
+.icon-pandora:before {
+    content: "\e901";
+}
+
+@font-face {
+    font-family: 'socials';
+    src: url('../fonts/socials-w7fzx0.eot');
+    src: url('../fonts/socials-w7fzx0.eot#iefix') format('embedded-opentype'), url('../fonts/socials-w7fzx0.ttf') format('truetype'), url('../fonts/socials-w7fzx0.woff') format('woff'), url('../fonts/socials-w7fzx0.svg#socials') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="npn-"],
+[class*=" npn-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'socials' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering ==== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.npn-angle-right:before {
+    content: "\e902";
+}
+
+.npn-angle-left:before {
+    content: "\e903";
+}
+
+/*title stylings*/
+.tour.Title {
+    top: 5%;
+}
+.video.Title {
+    top: 10%;
+    left: -1%;
+}
+.music.Title {
+    left: -1%;
+    top: 13%;
+}
+.mlist.Title {
+    top: 85%;
+    left: -6.25%;
+}
+.merch.Title {
+    top: 20%;
+    left: -3.75%;
+}
+.video-wrapper-title,
+.music-title {
+    position: relative;
+    top: 74px;
+}
+.tour-title {
+    position: relative;
+    top: 56px;
+}
+.merch-title {
+    position: relative;
+    top: 100px;
+}
+.mlistLeftWrapper {
+    position: relative;
+    top: 145px;
+}
+.videoWrapper, .musicWrapper, .gallaryWrapper, .merchWrapper, .mlistWrapper {
+    margin-top: 5%;
+}
+/* footer starts */
+.copyrightWrapper {
+    font-size: 12px;
+    color: #C7424F;
+    letter-spacing: 0;
+    line-height: 2;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 10px;
+}
+
+.copyrightWrapper a {
+    color: #C7424F;
+}
+
+ul.footer-social li a {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.footer-social li {
+    display: inline-block;
+    float: none;
+    margin-right: 18px;
+}
+
+ul.footer-social li:last-child {
+    margin-right: 0;
+}
+ul.footer-social li a.icon-soundcloud {
+    font-size: 30px;
+    position: relative;
+    top: 3px;
+}
+.copyrightWrapper a:hover {
+    opacity: 0.5;
+}
+ul.footer-social li a:hover {
+    opacity: 0.5;
+}
+.sepMob,
+.sepipad,
+.sepipla{
+    display: inline-block;
+}
+span.plus-symbol {
+    font-family: none;
+    margin-left: 10px;
+    font-size: 27px;
+    font-weight: 100;
+}
+
+/*video css*/
+.videoSection {
+    font-size: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 100%;
+}
+ul.video-carousel {
+    padding: 0;
+    width: calc(64% - 290px);
+    width: -webkit-calc(64% - 290px);
+    margin: 0 auto;
+}
+
+.media.wrapper .video {
+    position: relative;
+    padding: 56.25% 0 0 0;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+
+.media.wrapper .video iframe {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.albumName {
+    text-transform: uppercase;
+    transition: opacity 0.9s cubic-bezier(0.7, 0, 0.3, 1) 0.5s;
+    letter-spacing: 3px;
+    font-size: 28.02px;
+    margin-top: 25px;
+    color: rgb(23, 37, 58);
+}
+
+.NewAlbumCopy {
+    padding-bottom: 5%;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+.videoWrapper {
+    z-index: 3;
+    position: relative;
+    margin-top: 5%;
+}
+/*Merch Section CSS*/
+li.merchItem.three a {
+    color: #C7424F;
+    font-size: 22px;
+    vertical-align: middle;
+    max-width: 231px;
+}
+a.merchLink.three {
+    background: #0F0F0F;
+    padding: 130px 24px;
+}
+.merchWrapper {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0;
+    padding: 0px 0 90px;
+    position: relative;
+}
+.music-content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    width: 100%;
+	text-align:left;
+}
+.merchItem {
+    display: inline-block;
+    width: 31%;
+    margin-right: 15px;
+    vertical-align: middle;
+    max-width: 100%;
+}
+.merchItem:last-child {
+    margin-right: 0;
+}
+.merchWrapper .merchItem:last-child {
+    margin-right: 0;
+}
+.merchItem:last-child {
+    margin-right: 0;
+}
+.shopNow {
+    color: #fff;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    height: 50px;
+    line-height: 50px;
+    max-width: 306px;
+    margin: 0 auto;
+    letter-spacing: 0px;
+}
+.shoplink {
+    padding-top: 10px;
+}
+.album .getitnow {
+    padding-top: 10px;
+    height: 50px;
+    display: block;
+	text-align:center;
+}
+ul.merchItems {
+    padding: 0;
+}
+ul.merchItems li:last-child {
+    margin-right: 0;
+}
+ul.merchItems {
+    padding-top: 25px;
+    width: 78%;
+    margin: 0 auto;
+}
+li.merchItem.three div {
+    position: relative;
+}
+a.merchLink.three {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: unset;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+li.merchItem.three div.shopNow {
+    z-index: -1;
+    opacity: 0;
+}
+li.merchItem img {
+    width: 100%;
+}
+.getitnow a {
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+}
+
+/* START - Video CSS */
+.video-content-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.video-wrapper.video-odd, .video-wrapper.video-even {
+	display: inline-block;
+	text-align: center;
+	width: 49%;
+	margin-top: 1.5%;
+}
+
+.video-wrapper.video-even {
+	margin-left: 1.5%;
+}
+.video-wrapperer {
+	margin: 0 auto;
+}
+
+.video-inner-wrapper {
+	position: relative;
+	width: 100%;
+	height: 0px;
+	padding-top: 56.25%;
+}
+
+.video-inner-wrapper iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+.video-image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.video .pagetitle {
+	font-size: 50px;
+	padding-top: 188px;
+	text-align: center;
+	padding-bottom: 2%;
+	font-family: 'cooper_hewittheavy';
+}
+.video-image img {
+	width: 100%;
+	height: 100%;
+}
+.play-icon-wrappe {
+    position: absolute;
+    z-index: 1000;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+span.video-title {
+	color: #fff;
+	vertical-align: middle;
+	font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+	cursor: pointer;
+}
+.play-icon-wrappe img {
+	vertical-align: middle;
+}
+.video .headerWrapper {
+	background: #fff;
+}
+.play-icon-wrappe:hover {
+	opacity: 0.8;
+}
+
+/* END - Video CSS */
+
+a.view_more.link_text.link_background {
+    background: transparent;
+    content: "";
+    vertical-align: middle;
+    text-align: center;
+    letter-spacing: 0px;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 0;
+    -webkit-transition: all 0.7s ease-in-out;
+    border-bottom: none;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    max-width: 195px;
+    font-size: 22px;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    margin: 0 auto;
+    display: block;
+}
+a.view_more.link_text.link_background:hover {
+    opacity: 0.5;
+}
+.musicWrapper a.view_more.link_text.link_background {
+     padding: 10px 0 0px 0;
+     color: #C7424F;
+ }
+
+.gallaryWrapper a.view_more.link_text.link_background {
+    padding: 10px 0 0px 0;
+    color: #C7424F;
+}
+.video-content-wrapper a.view_more.link_text.link_background {
+    padding: 27px 0 0px 0;
+    color: #C7424F;
+}
+
+@media only screen and (min-width: 1024px) {
+    span.video-title {
+        font-size: 40px;
+    }
+    .owl-carousel .owl-item.active .media.wrapper .video {
+        padding: 56.25% 0 0 0;
+    }
+    .media.wrapper .video {
+        padding: 44.5% 0 0 0;
+    }
+    .media.wrapper .video iframe,
+    .owl-carousel .owl-item img {
+        top: 12.12%;
+    }
+    .owl-carousel .owl-item.active .media.wrapper .video iframe {
+        top: 0;
+    }
+    .owl-carousel .owl-item.active img {
+        top: 0;
+    }
+    li.videoWrap {
+        pointer-events: none;
+    }
+    .owl-item.active li.videoWrap {
+        pointer-events: all;
+    }
+    .albumStream.owl-carousel .owl-controls .owl-prev {
+        position: absolute;
+        top: 25px;
+        left: 0%;
+        transform: translate(-50%, 100%);
+    }
+    .albumStream.owl-carousel .owl-controls .owl-next {
+        position: absolute;
+        top: 25px;
+        right: -12%;
+        transform: translate(-50%, 100%);
+    }
+    #wsk-widget {
+        min-height: 210px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    span.plus-symbol {
+        font-size: 24px;
+    }
+    .videoWrapper {
+        margin-top: 15%;
+    }
+    a.view_more.link_text.link_background {
+        font-size: 18px;
+        max-width: 80%;
+        width: 100%;
+        text-align: center;
+        height: 35px;
+        line-height: 35px;
+    }
+    .getitnow a {
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .copyrightWrapper {
+        font-size: 10px;        
+        line-height: 1;
+    }
+    .sepMob {
+        display: none;
+    }
+    .getitnow {
+        padding-top: 10px;
+        height: 40px;
+    }
+    li.merchItem.three img {
+        display: none;
+    }
+    .videoSection {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .owl-item.active .play {
+        left: 19px;
+        bottom: -13px;
+    }
+    .albumStream.owl-carousel .owl-controls .owl-prev {
+        position: absolute;
+        top: 25px;
+        left: -1%;
+        transform: translate(-50%, 100%);
+    }
+    .albumStream.owl-carousel .owl-controls .owl-next {
+        position: absolute;
+        top: 25px;
+        right: -15%;
+        transform: translate(-50%, 100%);
+    }
+    .videoSection {
+        padding-top: 30px;
+    }
+    ul.video-carousel {
+        width: calc(90% - 10px);
+        width: -webkit-calc(90% - 10px);
+    }
+    .owl-prev.npn-angle-left {
+        font-size: 45px;
+        left: -35px;
+    }
+    .owl-next.npn-angle-right {
+        right: -35px;
+        font-size: 45px;
+    }
+    .videoWrapper.mobile .owl-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        width: 100%;
+    }
+    .copyrightWrapper a {
+        display: inline-block;
+    }
+    .videoSection {
+        padding-top: 28px;
+    }
+    .albumName {
+        letter-spacing: 0;
+    }
+    .NewAlbumCopy {
+        padding-bottom: 6px;
+    }
+    .contentWrapper {
+        margin-bottom: 68px;
+    }
+    ul.footer-social li a {
+        font-size: 24px;
+    }
+    ul.footer-social li {
+        margin-right: 15px;
+    }
+	.video .headerWrapper {
+		background: #fff;
+	}
+	.video .overallWrapper {
+		padding-top: 75px;
+	}
+	.video-wrapperer {
+		margin: 0 auto;
+	}
+	.video-wrapper.video-odd, .video-wrapper.video-even {
+		display: block;
+		width: 87%;
+		margin: 25px auto;
+	}
+	.video .pagetitle {
+		padding-top: 111px;
+		font-size: 25px;
+		padding-bottom: 10px;
+		margin-bottom: 0;
+    }
+    span.video-title {
+        font-size: 20px;
+    }
+    ul.merchItems li:last-child {
+        margin-right: auto;
+        padding-bottom: 0;
+    }
+    ul.merchItems {
+        padding: 0;
+        width: 85%;
+    }
+    .merchItem {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    ul.merchItems li {
+        padding-bottom: 15px;
+    }
+    a.shopNow {
+        color: #FFFFFF;
+        font-size: 18px;
+        letter-spacing: 0.8px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .merchWrapper {
+        padding: 12px 0 50px;
+    }
+    .shopNow {
+        height: 35px;
+        line-height: 35px;
+        font-size: 18px;
+        margin-top: 0px;
+    }
+    .merchWrapper .merchItem:last-child {
+        margin: 30px auto 0;
+    }
+    li.merchItem.three a {
+        font-size: 18px;
+        width: 189px;
+        height: 40px;
+        line-height: 40px;
+    }
+    	/*title stylings*/
+    .tour.Title {
+        top: 0%;
+        left: -7%;
+    }
+    .video.Title {
+        top: 4%;
+        left: -8%;
+    }
+    .music.Title {
+        top: 3%;
+        left: -9%;
+    }
+    .mlist.Title {
+        top: 37%;
+        left: -18%;
+    }
+    .merch.Title {
+        top: 5%;
+        left: -9.75%;
+    }
+    .tour-title {
+        top: 0;
+    }
+    .video-wrapper-title, .music-title {
+        top: 30px;
+    }
+    .merch-title {
+        top: 36px;
+    }
+    .mlistLeftWrapper {
+        top: 80px;
+    }
+}
+@media only screen and (max-width:767px) and (orientation:landscape) {
+    	/*title stylings*/
+    .tour.Title {
+        left: -3%;
+    }
+    .video.Title {
+        left: -4%;
+    }
+    .music.Title, .merch.Title {
+        left: -4;
+    }
+    .mlist.Title {
+        left: -9%;
+    }
+}
+@media only screen and (max-width : 340px){ 
+    .mlist.Title {
+        top: 37%;
+        left: -21%;
+    }
+}
+@media only screen and (max-width : 340px) and (orientation: landscape) { 
+    .mlist.Title {
+        left: -9%;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .getitnow a {
+        font-size: 18px;
+    }
+    .copyrightWrapper {
+        max-width: 75%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 0;
+    }
+    .shopNow {
+        font-size: 18px;
+        max-width: 188px;
+    }
+    li.merchItem.three a {
+        font-size: 18px;
+        max-width: 189px;
+    }
+    .video-content-wrapper, 
+    .music-content, 
+    ul.merchItems, 
+    .mlistRightWrapper {
+        max-width: 85%;
+        width: 100%;
+    }
+    .video-wrapper.video-even {
+        margin-left: 1%;
+    }
+    span.video-title {
+        font-size: 20px;
+    }
+    .sepipad{
+        display: none;
+    }
+    .videoWrapper {
+        margin-top: 10%;
+    }
+    	/*title stylings*/
+    .tour.Title {
+        top: 4%;
+        left: -6%;
+    }
+    .video.Title {
+        top: 11%;
+        left: -9%;
+    }
+    .music.Title {
+        left: -9%;
+        top: 15%;
+    }
+    .mlist.Title {
+        top: 66%;
+        left: -19%;
+    }
+    .merch.Title {
+        top: 23%;
+        left: -11%;
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1024px) {
+    .copyrightWrapper {
+        position: relative;
+        max-width: 380px;
+        margin: 0 auto;
+        z-index: 999;
+    }
+    .sepipla {
+        display: none;
+    }
+    .sepipad {
+        display: inline-block;
+    }
+    	/*title stylings*/
+    .tour.Title {
+        left: -5%;
+    }
+    .video.Title {
+        left: -6%;
+    }
+    .music.Title{
+        left: -6%;
+    }
+    .merch.Title {
+        left: -7%;
+    }
+    .mlist.Title {
+        left: -13%;
+    }
+    .about.Title {
+        left: -15%;
+    }
+}
+@media only screen and (min-width: 1800px) {
+    .mlist.Title {
+        left: -4.25%;
+    }
+}
+
+/*hover - underline hover effect*/
+.link-2 {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 0 1px;
+    transition: color ease 0.3s;
+}
+
+.link-2::before,
+.link-2::after {
+    content: '';
+    position: absolute;
+    background-color: #FFFFFF;
+    z-index: -1;
+    height: 1px;
+}
+
+.link-2::before {
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition: width ease 0.4s;
+}
+
+.link-2::after {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: all ease 0.6s;
+}
+
+.link-2:hover::before {
+    width: 100%;
+}
+
+.link-2:hover::after {
+    left: 100%;
+    width: 0%;
+    transition: all ease 0.2s;
+}  
+  
+a.merchLink.three.link-2::before, a.merchLink.three.link-2::after {
+    background-color: #C7424F;
+}

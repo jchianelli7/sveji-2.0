@@ -1,0 +1,144 @@
+.headerWrapper {
+    padding-top: 10px;
+    background: url("../images/bg.jpg") no-repeat scroll center top / cover;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+.site-logo img {
+    width: 58%;
+}
+
+.GIF-cnt img {
+    width: 26.5%;
+}
+
+.site-logo {}
+
+.site-side {
+    position: absolute;
+    z-index: -1;
+    top: -23%;
+    left: -5.1%;
+}
+
+.site-side img {
+    width: 100%;
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .headerWrapper {
+        padding-bottom: 20px;
+        height: 34vh;
+    }
+    .GIF-cnt img {
+        width: 50.5%;
+    }
+    .site-logo {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .copyrightWrapper span.sepMob1:nth-of-type(2),
+    .copyrightWrapper span.sepMob1:nth-of-type(5) {
+        display: inline;
+    }
+    span.sepMob1:first-child {
+        display: none;
+    }
+    span.sepMob1:nth-of-type(3) {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1024px) {
+    .headerWrapper {
+        height: 64vh;
+    }
+    .leftImg img {
+        top: -338px;
+        left: -75px;
+    }
+    .rightImg img {
+        top: -286px;
+    }
+    span.sepMob1 {
+        display: inline;
+    }
+    .copyrightWrapper {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .site-logo img {
+        width: 65%;
+    }
+    .GIF-cnt img {
+        width: 38%;
+    }
+    .tourWrapper {
+        position: relative;
+        z-index: 9;
+    }
+    span.sepMob1:nth-of-type(2) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .GIF-cnt img {
+        width: 49%;
+    }
+    .site-logo img {
+        width: 87%;
+    }
+    .Title {
+        letter-spacing: 0;
+    }
+    .headerWrapper {
+        padding-bottom: 35px;
+        height: 530px;
+    }
+    .site-side {
+        top: -119px;
+        left: -350px;
+        width: 564px;
+        height: 772px;
+    }
+    .copyrightWrapper {
+        margin: 0 auto;
+        max-width: 290px;
+    }
+    .rightImg img {
+        max-width: 305px;
+        top: 104px;
+        right: -32px;
+    }
+    .leftImg img {
+        max-width: 205px;
+        top: 83px;
+        left: -52px;
+    }
+    .site-logo {
+        padding-top: 16%;
+    }
+    a.cookie {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .site-side {
+        left: -275px;
+    }
+}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) { 
+    .musicWrapper {
+        position: relative;
+        max-width: 84%;
+        margin: 0 auto;
+    }
+}

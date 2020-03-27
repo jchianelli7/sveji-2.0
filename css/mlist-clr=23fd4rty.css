@@ -1,0 +1,690 @@
+@import url("https://use.typekit.net/xlq2hea.css");
+a.terms {
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+a.terms:hover {
+    opacity: 0.5;
+}
+.btn-4:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .8;
+    position: absolute;
+    top: -50px;
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    transform: rotate(35deg);
+    -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 10;
+}
+
+.btn-4 {
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-4:hover:after {
+    left: 120%;
+    -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.splash_overall {
+    display: none;
+    background-color: rgb(209, 189, 172);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 16090;
+}
+
+.header-mlist.mlist-outer-wrapper.embedded-inline-list.country-detect.lightbox.lightboxActive {
+    position: fixed;
+    z-index: 16098;
+    width: 100%;
+    max-width: 500px;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+}
+
+#sbrina-mlist {
+    max-width: 880px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+form {
+    font-size: 0;
+}
+
+form#homePageSignup {
+    position: relative;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-width: 550px;
+    text-align: left;
+}
+
+.termsWrapper a.terms:before {
+    content: "Terms";
+}
+.termsWrapper a.terms:after {
+    content: "+";
+    font-family: none;
+    margin-left: 5px;
+    font-size: 16px;
+} 
+.termsWrapper a.terms.showing::before {
+    content: "Hide";
+}
+.termsWrapper a.terms.showing::after {
+    content: "-";
+    font-family: none;
+    margin-left: 5px;
+    font-size: 16px;
+}
+.termsContent {
+    display: none;
+    font-size: 8px;
+    line-height: 1.5;
+    -webkit-text-size-adjust: none;
+    top: 10px;
+    padding: 0;
+    background: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    position: absolute;
+    top: 36px;
+    z-index: 1;
+    padding: 5px;
+    color: #ffffff;
+}
+
+.termsContent a {
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.termsContent a:hover {
+    text-decoration: none;
+}
+
+.m-required.error {
+    border-color: #ff0000;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.mlist-field.email-field label.error {
+    font-size: 10px;
+    color: #ff0000;
+    display: inline-block;
+    text-transform: uppercase;
+    position: absolute;
+    top: -13px;
+    letter-spacing: 1px;
+    text-align: left;
+    width: 100%;
+    left: 0;
+}
+
+input,
+select {
+    border-width: 0;
+    border: 1px solid #C7424F;
+    padding: 0px 10px 0px;
+    color: #fff;
+    -webkit-border-radius: 0px;
+    letter-spacing: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    height: 50px;
+    line-height: 1
+}
+
+select {
+    background: url('../images/dropdown.svg') no-repeat right 10px center transparent;
+}
+
+option {
+    background: #000;
+    color: #fff;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+input:-webkit-autofill,
+select:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 30px #000000 inset;
+	-webkit-text-fill-color: #ffffff;
+}
+input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    opacity: 1;
+}
+
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    opacity: 1;
+}
+
+input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    opacity: 1;
+}
+
+input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    opacity: 1;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+.mlist-wrapper {
+    font-size: 0;
+}
+
+.mlist-header {
+    font-size: 26px;
+    padding: 0;
+    line-height: 1.4;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+    margin-right: 0;
+    display: block;
+    vertical-align: top;
+    letter-spacing: 0;
+    margin: 0 auto;
+}
+
+.mlist-field.email-field {
+    display: inline-block;
+    /* width: calc(100% - 120px - 5%); */
+    width: 365px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.mlist-submit {
+    display: inline-block;
+    width: 155px;
+    vertical-align: middle;
+    height: 50px;
+}
+
+input.submit {
+    border: none;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    background: transparent;
+    color: #fff;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.terms {
+    color: #C7424F;
+}
+
+.mlist-submit span.button,
+.mlist-submit-new span.button {
+    max-width: 110px;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-size: 16px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 0;
+    text-align: center;
+}
+
+.termsWrapper {
+    padding: 8px 0 0 0;
+    position: relative;
+}
+
+.termsWrapper.first {
+    text-align: left;
+}
+
+.termsWrapper.first .termsContent {
+    text-align: left;
+}
+
+.secondFormCloseWrap {
+    text-align: right;
+    padding: 5px 0 5px;
+}
+
+.secondFormCloseWrap a {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 700;
+    width: 25px;
+    display: block;
+    text-align: center;
+    height: 27px;
+    margin-left: auto;
+}
+
+.secondFormCloseWrap a:hover {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+div#thankyoublock-innerwrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 50%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 0;
+}
+
+div#thankyouBlock>.thankyou-message.embed {
+    display: none;
+}
+
+div#thankyouBlock.final-screen>.thankyou-message.embed {
+    display: block;
+    font-size: 38px;
+    color: #C7424F;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+#thankyoublock-innerwrapper .thankyou-message.embed {
+    font-size: 26px;
+    text-align: center;
+    /* line-height: 22px; */
+    line-height:1.4;
+}
+
+.thankswelcome-msg {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 10px 0;
+    text-align: left;
+}
+
+div#errorLabelContainer2 {
+    color: #ff0000;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+}
+
+#thankyoublock-innerwrapper .mlist-field label.error {
+    font-size: 22px;
+    color: #ff0000;
+    letter-spacing: 0.4px;
+}
+
+#thankyoublock-innerwrapper .mlist-field label {
+    font-size: 14px;
+    display: block;
+    margin: 10px 0 0;
+    text-align: left;
+    line-height: 2;
+}
+.mlist-submit-new {
+    text-align: center;
+}
+.mlist-submit-new span.button {
+    width: auto;
+    max-width: initial;
+    display: inline-block;
+}
+#thankyoublock-innerwrapper .mlist-field select,
+#thankyoublock-innerwrapper .mlist-field input {
+    padding: 0;
+    font-size: 16px;
+    padding-left: 6px;
+}
+
+.termsWrapper.second {
+    text-align: center;
+}
+
+select#dobMonth,
+select#dobDay {
+    width: 49%;
+    display: inline-block;
+}
+
+select#dobMonth {
+    margin-right: 2%;
+}
+
+label.global-list {
+    font-size: 10px;
+    margin-left: 23px;
+    vertical-align: middle;
+    line-height: 20px;
+    width: calc(100% - 23px);
+    display: inline-block;
+    text-align: left;
+}
+
+.mlist-outer-wrapper [type="checkbox"]:not(:checked),
+.mlist-outer-wrapper [type="checkbox"]:checked {
+    position: absolute;
+    left: 0px;
+    width: 16px;
+    height: 16px;
+    z-index: 10;
+    top: 0px;
+    opacity: 0;
+    cursor: pointer;
+    margin: 0;
+    -webkit-appearance: none;
+    padding: 0;
+}
+
+.mlist-outer-wrapper [type="checkbox"]:not(:checked)+label:before,
+.mlist-outer-wrapper [type="checkbox"]:checked+label:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+
+.mlist-outer-wrapper [type="checkbox"]:not(:checked)+label:after,
+.mlist-outer-wrapper [type="checkbox"]:checked+label:after {
+    content: '\2713';
+    position: absolute;
+    top: 0px;
+    font-weight: 700;
+    left: 3px;
+    font-size: 12px;
+    color: #ffffff;
+    transition: 0.2s delay;
+}
+
+.mlist-outer-wrapper [type="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.mlist-checks {
+    position: relative;
+    margin: 15px 0;
+}
+
+.mlistRightWrapper {
+    width: 75%;
+    text-align: left;
+}
+.mlistRightWrapper {
+    display: inline-block;
+    vertical-align: top;
+}
+.mlistWrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+/* .mlist-submit:hover {
+    opacity: 0.5;
+    color: #fff;
+} */
+.mlistJoin.CTA {
+    color: #FFFFFF;
+    font-size: 26px;
+    letter-spacing: 0px;
+    padding-bottom: 25px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.mlistJoin.CTA2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    letter-spacing: 0px;
+    padding-bottom: 25px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.mlistJoin.CTA span {
+    display: block;
+}
+input#email {
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+}
+/** footer styles **/
+
+.footerWrapper {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.socialWrapper {
+    margin-bottom: 10px;
+}
+
+.footerImageWrapper {
+    padding: 20px 0;
+}
+@media only screen and (max-width: 767px) {
+    .header-mlist.mlist-outer-wrapper.embedded-inline-list.country-detect.lightbox.lightboxActive {
+        max-height: 100%;
+        overflow-y: scroll;
+    }
+    .mlist-header {
+        font-size: 14px;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        padding: 15px 0;
+    }
+    fieldset {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    input#email {
+        text-align: center;
+    }
+    .mlist-submit {
+        width: 100px;
+        margin-top: 0px;
+        height: 41px;
+        line-height: 40px;
+    }
+    /* .termsContent {
+		position: static;
+	} */
+    .mlist-field.email-field label.error {
+        position: absolute;
+        top: -16px;
+    }
+    .footerWrapper {
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .mlistWrapper {
+        max-width: 100%;
+    }
+    .mlistRightWrapper {
+        width: 85%;
+    }
+    .mlistJoin.CTA span {
+        display: inline;
+    }
+    .mlist.Title {
+        font-size: 22px;
+        font-family: aktiv-grotesk-extended, sans-serif;
+    }
+    .mlistJoin.CTA {
+        padding: 0px;
+    }
+    .termsWrapper.first {
+        text-align: center;
+    }
+    .sepMob2 {
+        display: none;
+    }
+    .footerImageWrapper {
+        padding-top: 50px;
+    }
+    .Title {
+        font-size: 22px;
+        letter-spacing: 0;
+    }
+    .mlistJoin.CTA {
+        max-width: 98%;
+        margin: 0 auto;
+        font-size: 14px;
+        padding-bottom: 7px;
+        text-align: left;
+    }
+    .mlist-field.email-field {
+        width: 90%;
+        margin-right: 0;
+    }
+    input#email {
+        font-size: 14px;
+        text-align: left;
+    }
+    input.submit,
+    input, select {
+        height: 40px;
+        line-height: 40px;
+    }
+    input.submit {
+        font-size: 18px;
+    }
+    .termsWrapper.first a.terms {
+        font-size: 10px;
+    }
+    .termsWrapper.first {
+        text-align: left;
+    }
+    .mlistWrapper {
+        padding-bottom: 15px;
+    }
+    #thankyoublock-innerwrapper .thankyou-message.embed {
+        font-size: 18px;
+    }
+    .mlist-submit span.button, .mlist-submit-new span.button {
+        width: 95px;
+        height: 37px;
+        line-height: 37px;
+    }
+    .mlist-submit-new span.button{
+        width:auto;
+    }
+    div#thankyoublock-innerwrapper {
+        width: 100%;
+    }
+    .thankswelcome-msg {
+        font-size: 13px;
+    }
+    div#thankyouBlock.final-screen>.thankyou-message.embed {
+        font-size: 30px;
+        padding: 70px 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .mlist-header {
+        font-size: 23px;
+    }
+    form#homePageSignup {
+        position: relative;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .headerWrapper {
+        padding-bottom: 50px;
+    }
+    .mlistJoin.CTA {
+        font-size: 20px;
+    }  
+    div#thankyoublock-innerwrapper {
+        width: 97%;
+    }
+}

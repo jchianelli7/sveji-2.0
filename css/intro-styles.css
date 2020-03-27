@@ -1,0 +1,458 @@
+@import url("https://use.typekit.net/xlq2hea.css");
+@import url("https://use.typekit.net/xlq2hea.css");
+@import url("https://use.typekit.net/vtg5szn.css");
+/*icommon*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon-3tt5q4.eot');
+    src:  url('../fonts/icomoon-3tt5q4.eot#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon-3tt5q4.ttf') format('truetype'),
+      url('../fonts/icomoon-3tt5q4.woff') format('woff'),
+      url('../fonts/icomoon-3tt5q4.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering ==== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-deezer:before {
+    content: "\e900";
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-spotify:before {
+    content: "\ea94";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-youtube:before {
+    content: "\ea9d";
+  }
+  .icon-appleinc:before {
+    content: "\eabe";
+  }
+  .icon-soundcloud:before {
+    content: "\eac3";
+  }
+  .icon-pandora:before {
+    content: "\e901";
+  }
+  
+  @font-face {
+
+    font-family: 'socials';
+    src: url('../fonts/socials-w7fzx0.eot');
+    src: url('../fonts/socials-w7fzx0.eot#iefix') format('embedded-opentype'), url('../fonts/socials-w7fzx0.ttf') format('truetype'), url('../fonts/socials-w7fzx0.woff') format('woff'), url('../fonts/socials-w7fzx0.svg#socials') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="npn-"], [class*=" npn-"] {
+  
+    /* use !important to prevent issues with browser extensions that change fonts */
+  
+    font-family: 'socials' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering ==== */
+  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .npn-angle-right:before {
+    content: "\e902";
+  }
+  
+  .npn-angle-left:before {
+    content: "\e903";
+  }
+
+/*#ytplayer,#mp4Video {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+}*/
+.videoWrapper {
+	position: relative;
+	height: 0;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+}
+.linkWrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+a{
+	text-decoration: none;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+body {
+	margin: 0;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: #000 !important;
+    color: #fff;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.footerWrapper {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: transparent;
+	color: #fff;
+	z-index: 100;
+}
+.socialWrapper {
+	background: #000;
+	line-height: 1;
+	padding: 20px 0 21px;
+}
+
+.footerWrapper a {
+	color: #fff;
+	text-decoration: none;
+}
+
+ul.footer-social li a {
+	display: block;
+	font-size: 20px;
+	color: #fff !important;
+	text-decoration: none;
+	/*font-family: aktiv-grotesk, sans-serif;*/
+	font-weight: normal;
+}
+ul.footer-social li:last-child {
+    margin-right: 0;
+}
+.copyrightWrapper {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	color: #fff !important;
+	letter-spacing: 0.5px;
+	background: #000;
+	padding-bottom: 15px;
+}
+
+.logoWrapper {
+	position: absolute;
+	left: 50%;
+	top: 54px;
+	z-index: 100;
+	transform: translateX(-50%);
+}
+
+.linkWrapper {
+	position: relative;
+	left: 50%;
+	width: 100%;
+	transform: translateX(-50%);
+	background: transparent;
+	margin-bottom: 2%;
+}
+
+.linkWrapper a {
+	background: #000;
+	padding: 11px 35px;
+	display: inline-block;
+	font-size: 24px;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.socialWrapper .enterSite {
+	font-size: 21px;
+    display: inline-block;
+    margin-right: 2%;
+    line-height: 1.2;
+	border-bottom: 5px solid #fff;
+	text-decoration: none;
+}
+.socialWrapper .enterSite:hover,.closeLB img:hover,ul.footer-social li a:hover,.copyrightWrapper a:hover {
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+.footer-social {
+	display: inline-block;
+}
+ul.footer-social li a.icon-soundcloud {
+    font-size: 30px;
+    position: relative;
+    top: 3px;
+}
+
+.lightbox {
+	background-color: rgba(0, 0, 0, 0.8);
+	overflow: hidden;
+	position: fixed;
+	display: none;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+  }
+  .lightbox-container {
+	position: relative;
+	max-width: 70%;
+	margin: 3% auto;
+	display: block;
+	padding: 0;
+	height: auto;
+	z-index: 10;
+}
+
+  .video-container {
+	padding-bottom: 56.25%;
+	position: relative;
+	padding-top: 30px;
+	overflow: hidden;
+	height: 0;
+  }
+  .video-container iframe{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+  }
+  ul, li {
+    padding: 0;
+    margin: 0;
+}
+ul.footer-social li {
+    display: inline-block;
+    float: none;
+    margin-right: 18px;
+}
+@media screen and (max-width: 768px) {
+	.lightbox-container {
+	  margin-top: 10%;
+	}
+  }
+  @media screen and (max-width: 414px) {
+	.lightbox-container {
+	  margin-top: 13%;
+	}
+  }
+
+.closeLB img {
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+.lightBoxWrapper iframe {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+width: 100%;
+height:100%;
+}
+	#ytplayer,#mp4Video {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: auto;
+	height: 100vh;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+	.footerWrapper {
+		background: #000;
+	}
+	.footerWrapper .copyrightWrapper{
+		z-index: unset;
+		max-width: 100%;
+	}
+	span.sepMob4 {
+		display: none;
+	}
+}
+@media only screen and (max-width:1023px){
+	body{
+		overflow-x:hidden;
+		overflow-y:auto;
+	}
+	.footerWrapper {
+		background: #000;
+		position: relative;
+	}
+
+	#ytplayer,#mp4Video {
+		position: absolute;
+		left: 50%;
+		top: 0;
+		width: auto;
+		/*height: 100vh;*/
+		transform: translateX(-50%);
+		overflow-x: hidden;
+	}
+	.logoWrapper.desktop{
+		display:none;
+	}
+	.logoWrapper.mobile {
+		display:block !important;
+		position: absolute;
+		left: 50%;
+		top: 24px;
+		z-index: 100;
+		transform: translateX(-50%);
+		width: 90%;
+	}
+	.linkWrapper a {		
+		font-size: 20px;		
+		margin-bottom: 3%;
+		display: block;
+		width: 30%;
+		margin-right: auto;
+		margin-left: auto;
+		transition: 0.6s ease all;
+	}
+	.linkWrapper a:first-child {
+		margin-right: auto;
+		margin-bottom: 3%;
+	}
+
+	.videoWrapper {	
+		height: 100%;
+		padding-bottom: 0;
+		padding-top: 0;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	.socialWrapper .enterSite{
+		display: block;
+		width: 160px;
+		margin: 0 auto;
+		margin-bottom: 11px;
+	}
+	.footerWrapper {
+		background: transparent;
+		position: relative;
+	}
+	.linkWrapper {
+		position: absolute;
+		left: 50%;
+		width: 100%;
+		transform: translateX(-50%);
+		background: transparent;
+		margin-bottom: 2%;
+		bottom: 100%;
+		top: auto;
+	}
+}
+@media only screen and (max-width:1024px) and (min-width:1024px){
+	#ytplayer,#mp4Video {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: auto;
+		height: 100vh;
+	}
+}
+@media only screen and (max-width:767px){
+.linkWrapper a{
+	width: 46%;
+	font-size: 16px;
+}
+}
+
+@media only screen and (max-width:1024px) and (orientation: portrait){
+
+	.footerWrapper{
+		position: absolute;
+		bottom:0;
+	}
+	.copyrightWrapper{
+		z-index: unset;
+		max-width: 100%;
+	}
+}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) {
+body {
+    overflow-y: scroll;
+}
+}
+.copyrightWrapper span.sepMob1:nth-of-type(2), .copyrightWrapper span.sepMob1:nth-of-type(5){
+	display:inline;
+}
+@media only screen and (min-width:1024px){
+.linkWrapper a{
+	margin-right: 3%;
+}
+.linkWrapper a:last-child {
+	margin-right: 0;
+}
+}
+/*Hover css*/
+.hoverEffect {
+    position: relative;
+    overflow: hidden;
+}
+.hoverEffect:after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: 110%;
+    width: 30px;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(20deg);
+    transition: 0.6s ease all;
+}
+.hoverEffect:hover:after {
+    right: -50%;
+}
+@media only screen and (min-width: 1024px){
+	#ytplayer,#mp4Video {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: auto;
+    min-height: 100vh;
+    height: 100%;
+}
+}
