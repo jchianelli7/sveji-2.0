@@ -1,11 +1,4 @@
-<style>
-    @media only screen and (max-width: 768px) {
-        #ppUpdateLightbox {
-            padding: 15px;
-            font-size: 8px;
-        }
-    }
-</style>
+
 <!DOCTYPE html>
 <html>
 
@@ -30,6 +23,34 @@
     <link rel="stylesheet" type="text/css" href="css/header-54.css">
     <link rel="stylesheet" type="text/css" href="css/songkick-1585330700.css">
     <!--<link rel="stylesheet" type="text/css" href="css/shutter.css">-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        @media only screen and (max-width: 768px) {
+            #ppUpdateLightbox {
+                padding: 15px;
+                font-size: 8px;
+            }
+            .Row {
+                display: block;
+            }
+            .Column {
+                display: block;
+            }
+
+        }
+
+        @media only screen and (min-width: 769px) {
+
+            .Row {
+                display: table;
+            }
+            .Column {
+                display: table-cell;
+                padding-left: 5%;
+            }
+
+        }
+    </style>
 
 </head>
 
@@ -274,34 +295,54 @@
                                     questions or to book your time now!
                                 </div>
                                 <div>
-                                    <div style="color: white">Down 4 Me Sample</div>
-                                    <audio controls>
-                                        <source src="./samples/Down4Me_SSsample%20.wav" type="audio/wav">
-                                        Your browser does not support the audio element.
-                                    </audio>
-                                    <p></p>
+                                    <div class="Row">
+                                        <div class="Column">
+                                            <div style="color: white">Down 4 Me</div>
+                                            <audio controls>
+                                                <source src="./samples/Down4Me_SSsample%20.wav" type="audio/wav">
+                                                Your browser does not support the audio element.
+                                            </audio>
+                                            <p></p>
 
-                                    <div style="color: white">Heart Me</div>
-                                    <audio controls>
-                                        <source src="./samples/HeartMe_SSsample.wav" type="audio/wav">
-                                        Your browser does not support the audio element.
-                                    </audio>
-                                    <p></p>
+                                            <div style="color: white">Heart Me</div>
+                                            <audio controls>
+                                                <source src="./samples/HeartMe_SSsample.wav" type="audio/wav">
+                                                Your browser does not support the audio element.
+                                            </audio>
+                                            <p></p>
+                                        </div>
+                                        <div class="Column">
+                                            <div style="color: white">K Town</div>
+                                            <audio controls>
+                                                <source src="./samples/KTown_SSsample.wav" type="audio/wav">
+                                                Your browser does not support the audio element.
+                                            </audio>
+                                            <p></p>
 
-                                    <div style="color: white">K Town</div>
-                                    <audio controls>
-                                        <source src="./samples/KTown_SSsample.wav" type="audio/wav">
-                                        Your browser does not support the audio element.
-                                    </audio>
-                                    <p></p>
+                                            <div style="color: white">Visceral</div>
+                                            <audio controls>
+                                                <source src="./samples/Visceral_SSsample.wav" type="audio/wav">
+                                                Your browser does not support the audio element.
+                                            </audio>
+                                            <p></p>
 
-                                    <div style="color: white">Visceral</div>
-                                    <audio controls>
-                                        <source src="./samples/Visceral_SSsample.wav" type="audio/wav">
-                                        Your browser does not support the audio element.
-                                    </audio>
-                                    <p></p>
+                                        </div>
 
+                                    </div>
+
+
+
+
+                                </div>
+                                <br>
+                                <br>
+
+                                <div class="mlist-submit ">
+											<span class="button link-2">
+												<span>
+                                                <a href="mailto:svejiboyz@gmail.com"
+                                                   target="_top">EMAIL US</a></span>
+											</span>
                                 </div>
                             </div>
 
@@ -310,6 +351,8 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
         <!--footer wrapper-->
         <div class="footerWrapper">
